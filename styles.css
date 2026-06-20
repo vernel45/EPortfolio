@@ -80,8 +80,7 @@ nav {
         /*ABOUT ME */
 
         #about-me {
-          min-height: 100vh;
-          display: flex;
+         display: flex;
           flex-direction: column;
         }
 
@@ -90,18 +89,18 @@ nav {
          flex-direction: column;
          align-items: center;
         }
-
         .about-me__picture--mask {
-            width: 100px;
-            height: 150px;
+            width: 155px;
+            height: 190px;
             border-radius: 50%;
-            overflow: hidden;
-            
+            overflow: hidden;            
         }
-
         .about-me__picture {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center top;
+
+            /*Improving my own pictire */
+            transform: scale(0.4);
         }
