@@ -159,6 +159,13 @@ nav {
          .about-me__img {
           width: 100%;
          }
+
+         .about-me__icon {
+            width: 1em;
+            height: 1em;
+            fill: currentColor;
+            vertical-align: middle;
+        }
         /* TECH - STACK */
 
         .language__img {
@@ -209,18 +216,22 @@ nav {
             .project {
             margin-bottom: 135px;    
             }
-            
+
+            .project:last-child {
+                margin-bottom: 40px;
+            }
+
             .project__img {
             width: 100%;
             transition: all 500ms ease; 
             }
 
             .project__wrapper {
-                display: flex;
-                box-shadow: 0 20px rgba(0,0,0,0.45);
-                border-radius: 20px;
-                overflow: hidden;
-                position: relative;
+            display: flex;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
                 
             }
 
@@ -265,7 +276,9 @@ nav {
             }
 
             .project__description--title {
-             font-size: 40px;   
+             font-size: 40px; 
+             color: white ;
+             text-align: left;
             }
 
             .project__description--link {
@@ -274,14 +287,36 @@ nav {
              text-decoration: none; 
             }
             
-            .project__description--sub-title,
+            .project__description--sub-title {
+                text-align:left;
+                color: white;
+            }
+            
             .project__description--para {
-            margin: 16px 0;  
+            margin: 16px 0; 
+            color: white; 
             }
 
 
             .project__description--link {
             text-align: left;
              color: #fff;
-
             }
+
+             .project__description--icon {
+             width: 1em;
+             height: 1em;
+             fill: currentColor;
+             vertical-align: middle;
+            }
+
+            /* FOOTER */
+
+            footer {
+            background-color: #242424;
+            
+            }
+
+
+
+            
