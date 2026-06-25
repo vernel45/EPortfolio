@@ -151,6 +151,20 @@ nav {
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
+  animation: animate-profile-picture 800ms;
+
+  @keyframes animate-profile-picture {
+    0% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+  }
 }
 .about-me__picture {
   width: 100%;
@@ -424,56 +438,40 @@ color: #fff;
 }
 
 .project__description {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 16px;
-    max-width: none;    
-    text-align: center;    
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: none;
+  padding: 0 16px;
+  text-align: center;
+  transform: translateY(100%);
 }
 
 .project:hover .project__description {
-  transform: translate(-50%, -50%);
-}
-
-.project__description--title,{
-
-}
-
-
-.project__description--subtitle {
- display: block;
- width: fit-content;
- margin: 4px auto 0;
- text-align: center
+  transform: translateY(-50%);
 }
 
 .project__description--para {
-  display: none;  
-}
-
-.project__description--links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+  display: none;
 }
 
 .project__description--title {
-font-size: 32px;
-line-height: 1; 
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.project__description--sub-title {
+    width: 100%;
+  text-align: center;
+}
+
+.project__description--links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
 }
 
 .project__description--link {
-    margin-right: 0;
+  margin-right: 0;
 }
-
-.project:hover .project__description {
-  transform: translate(-50%, -50%);
-}
-}
-
-
-
-
-
